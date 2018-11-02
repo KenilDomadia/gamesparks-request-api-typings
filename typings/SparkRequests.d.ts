@@ -6,11 +6,11 @@ declare namespace SparkRequests {
     type Float = number;
 
     class _Request<T> {
-        scriptData: any;
-        Execute: () => T;
-        ExecuteAs: (playerId: any) => T;
-        Send: () => T;
-        SendAs: (playerId: any) => T;
+        scriptData?: any;
+        Execute?: () => T;
+        ExecuteAs?: (playerId: any) => T;
+        Send?: () => T;
+        SendAs?: (playerId: any) => T;
     }
     class _Response {
         error: any;
